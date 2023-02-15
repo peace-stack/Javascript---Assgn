@@ -1,9 +1,9 @@
 
 
 function yearS ( year1, year2){
-    let yearDiff= ((year1.getyear() - year2.getyear()) / 1000 )
-    yearDiff /= (60 * 60 * 24) ;
-    return Math.abs(Math. round(yearDif/365.25));   
+    let firstYear = new Date().getFullYear()
+    let secondYear = new Date(1).getFullYear()
+    let yearDiff= firstYear - secondYear
+    return yearDiff
 }
-
-yearS(2023, 1970);
+console.log (yearS(2023, 1970));
